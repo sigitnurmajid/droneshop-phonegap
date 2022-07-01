@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+   #main {
+      padding: 40px;
+   }
+</style>
+
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scale=no. width=device-width">
+   <title>Drone Shop - Mobile</title>
+   <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+   <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+   <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+
+<body>
+   <div data-role="page" id="page1">
+      <div data-role="header">
+         <h1>Drone Shop</h1>
+      </div>
+      <div data-role="main" class="ui-content" id="main">
+         <div class="login-modal">
+            <div class="form-wrapper">
+               <h2>Sign In</h2>
+               <form>
+                  <input name="email" type="text" id="email" placeholder="Email">
+                  <input name="password" type="password" id="password" placeholder="Password">
+                  <button type="submit" value="Sign In" onclick="moveToProductPage()"> Sign In </button>
+                  <script>
+                     function moveToProductPage() {
+                        window.location.href = "html/product.html"
+                     }
+                  </script>
+                  
+               </form>
+               <br>
+               Need an account? <a href="html/auth/signup.html" URL>Sign Up </a>
+            </div>
+         </div>
+      </div>
+   </div>
+</body>
+
+</html>
